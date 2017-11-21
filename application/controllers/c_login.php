@@ -21,7 +21,7 @@ class C_login extends CI_Controller{
 		$password = $this->input->post('password');
 		$where = array(
 			'username' => $username,
-			'password' => $password,
+            'password' => md5($password)
 			);
 		$cek = $this->datamodel->tampil_login($where, 'admin')->num_rows();
 		if($cek > 0){
@@ -32,7 +32,7 @@ class C_login extends CI_Controller{
 				);
 
 			$this->session->set_userdata($data_session);
-			redirect('c_customer/index');
+			redirect('c_dash/index');
 
 		}else{
 			$this->session->set_flashdata('err', 'Username dan Password salah!');

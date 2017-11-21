@@ -6,24 +6,29 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
         <li>
-          <a class="glyphicon glyphicon-home" href="#">
-			<span><?php echo ucfirst('dashboard') ?></span>
+          <a class="glyphicon glyphicon-home" href="<?php echo base_url('c_dash/index') ?>">
+			       <span><?php echo ucfirst('dashboard') ?></span>
           </a>
         </li>
 		 <li>
-          <a class="glyphicon glyphicon-user" href="<?php echo base_url('C_customer/index') ?>">
-			<span><?php echo ucfirst('customer') ?></span>
+          <a class="glyphicon glyphicon-user" href="<?php echo base_url('c_customer/index') ?>">
+			       <span><?php echo ucfirst('customer') ?></span>
           </a>
         </li>
 		 <li>
-          <a class="glyphicon glyphicon-plane" href="<?php echo base_url('C_company/index')?>">
-			<span><?php echo ucfirst('company') ?></span>
+          <a class="glyphicon glyphicon-plane" href="<?php echo base_url('c_company/index')?>">
+			       <span><?php echo ucfirst('company') ?></span>
           </a>
         </li>
 		 <li>
-          <a class="glyphicon glyphicon-book" href="<?php echo base_url('Baru/index')?>">
-			<span><?php echo ucfirst('industry') ?></span>
+          <a class="glyphicon glyphicon-book" href="<?php echo base_url('baru/index')?>">
+			       <span><?php echo ucfirst('industry') ?></span>
           </a>
+        </li>
+        <li>
+         <a class="glyphicon glyphicon-log-out" href="<?php echo base_url('c_login/logout'); ?>">
+            <span><?php echo ucfirst('Logout') ?></span>
+         </a>
         </li>
       </ul>
     </section>

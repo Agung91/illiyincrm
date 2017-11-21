@@ -6,25 +6,30 @@
      <!-- sidebar menu: : style can be found in sidebar.less -->
      <ul class="sidebar-menu" data-widget="tree">
        <li>
-         <a class="glyphicon glyphicon-home" href="#">
-			<span>Dashboard</span>
+         <a class="glyphicon glyphicon-home" href="<?php echo base_url('c_dash/index') ?>">
+			       <span>Dashboard</span>
          </a>
        </li>
 		<li>
-         <a class="glyphicon glyphicon-user" href="<?php echo base_url('C_customer/index') ?>">
-			<span>Customer</span>
+         <a class="glyphicon glyphicon-user" href="<?php echo base_url('c_customer/index') ?>">
+			       <span>Customer</span>
          </a>
        </li>
 		<li>
-         <a class="glyphicon glyphicon-plane" href="<?php echo base_url('C_company/index')?>">
-			<span>Company</span>
+         <a class="glyphicon glyphicon-plane" href="<?php echo base_url('c_company/index')?>">
+			       <span>Company</span>
          </a>
        </li>
 		<li>
-         <a class="glyphicon glyphicon-book" href="<?php echo base_url('Baru/index')?>">
-			<span>Industry</span>
+         <a class="glyphicon glyphicon-book" href="<?php echo base_url('baru/index')?>">
+			       <span>Industry</span>
          </a>
        </li>
+        <li>
+         <a class="glyphicon glyphicon-log-out" href="<?php echo base_url('c_login/logout'); ?>">
+            <span><?php echo ucfirst('Logout') ?></span>
+         </a>
+        </li>
      </ul>
    </section>
    <!-- /.sidebar -->

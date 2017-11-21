@@ -8,6 +8,9 @@ class Baru extends CI_Controller {
 		parent::__construct();		
 		$this->load->model('datamodel');
 		$this->load->helper('url');
+        if($this->session->userdata('status') != "c_login"){
+			redirect('c_login');
+		}
 	}
 
 	public function index()

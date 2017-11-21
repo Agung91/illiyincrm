@@ -29,7 +29,9 @@
             <!-- login logo -->
             <div class="login-box-body">
                 <p class="login-box-msg">Sign in start your session</p>
-                
+                <label>
+                    <b style="color:red"><?php echo $this->session->flashdata('err') ?></b>
+                </label>
                 <form action="<?php echo base_url('c_login/aksi_login') ?>" method="post">
                     <div class="form-group has-feedback">
                         <input type="text" class="form-control" placeholder="Username" name="username">
@@ -39,7 +41,6 @@
                         <input type="password" class="form-control" placeholder="Password" name="password">
                         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
                     </div>
-                        <b style="color:red"><?php echo $this->session->flashdata('err') ?></b>
                     <div class="row">
                         <div class="col-xs-8">
                             <div class="checkbox icheck">
